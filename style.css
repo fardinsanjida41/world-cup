@@ -58,21 +58,46 @@ h1 {
 }
 
 .middle {
+    margin: 70px auto;
     width: 900px;
     display: flex;
+    justify-content: space-between;
+}
 
+.others {
+    width: 120px;
+    height: 160px;
+    padding: 50px;
+    display: inline-grid;
+    align-content: space-between;
+    background-color: black;
+    border: black;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+}
 
+.others a {
+    width: 150px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 4px;
 }
 
 .grid-section {
-    width: 18vw;
+    width: 16vw;
     height: 250px;
     border: 2px solid #f1e8e8;
     border-radius: 10px;
 }
 
 .grid-section #player-pic {
-    width: 18vw;
+    width: 16vw;
 }
 
 .icon-one {
@@ -123,4 +148,49 @@ h6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+}
+
+footer {
+    color: #f1e8e8;
+    background-color: rgb(65, 62, 62);
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    padding: 50px 50% 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 80vw;
+}
+
+.more-information {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.social-media-icons {
+    width: 300px;
+    margin-top: 5px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h6 {
+    width: 400px;
+    font-weight: 100;
 }
