@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Mukta&family=Poppins:ital@1&display=swap');
 
 body {
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: aliceblue;
 }
@@ -18,7 +19,7 @@ body {
 }
 
 .headin-one {
-    width: 33vw;
+    width: 445px;
     margin-left: 50px;
     margin-bottom: 60px;
 }
@@ -90,14 +91,14 @@ h1 {
 }
 
 .grid-section {
-    width: 16vw;
+    width: 208px;
     height: 250px;
     border: 2px solid #f1e8e8;
     border-radius: 10px;
 }
 
 .grid-section #player-pic {
-    width: 16vw;
+    width: 208px;
 }
 
 .icon-one {
@@ -176,6 +177,7 @@ hr {
     width: 700px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 footer p {
@@ -193,4 +195,179 @@ footer p {
 footer h6 {
     width: 400px;
     font-weight: 100;
+}
+
+/* For mobile view */
+@media only screen and (max-width:688px) {
+    /* body {
+        margin: 13px;
+    } */
+
+    .heading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle {
+        flex-direction: column;
+
+    }
+
+    .headin-one {
+        width: 70%;
+        margin: 10px auto 25px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headin-image {
+        width: 50px;
+        padding: 10px 15px 0;
+        margin: 10px auto 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+
+    .middle {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .grid-section {
+        width: 100%;
+        height: 320px;
+        margin: 15px auto 1px;
+    }
+
+    .grid-temp {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .grid-section #player-pic {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .more-information {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+}
+
+
+
+/* For tab */
+@media only screen and (min-width:689px) and (max-width:1023px) {
+    .heading {
+        width: 89%;
+        margin: 50px;
+        height: 500px;
+        margin-bottom: 0;
+    }
+
+    .headin-one {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    .headin-image {
+        width: 80%;
+        height: 300px;
+        margin-right: 0;
+    }
+
+    .grid-section #player-one {
+        width: 100%;
+    }
+
+    .middle {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .others {
+        width: 550px;
+        height: fit-content;
+        padding: 0 30px 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .others a {
+        margin: 5px;
+        flex-direction: row;
+
+
+    }
+
+    .grid-section {
+        width: 100%;
+        height: 289px;
+    }
+
+    .grid-temp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+
+    .grid-section #player-pic {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width-1024px) {
+    .headin-one {
+        width: 100%;
+    }
+
+    .others {
+        background-color: black;
+        border: black;
+        border-radius: 9px;
+    }
+
+    .grid-temp {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+
 }
