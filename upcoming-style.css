@@ -1,6 +1,3 @@
-/* ---------------------------------------------------------
-Font design 
-------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Mukta&family=Poppins:ital@1&display=swap');
 
 body {
@@ -9,9 +6,6 @@ body {
     background-color: aliceblue;
 }
 
-/*  --------------------------------------------------
-Header Started
------------------------------------------------------- */
 .heading {
     width: 900px;
     margin: 5px auto;
@@ -64,13 +58,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/*----------------------------------------------------
-    Header ended
- ----------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------
-   Main started
- --------------------------------------------------------------------- */
 .middle {
     margin: 70px auto;
     width: 900px;
@@ -111,68 +98,54 @@ h1 {
 
 .grid-section {
     width: 208px;
-    height: 250px;
+    height: 170px;
     border: 2px solid #f1e8e8;
     border-radius: 10px;
-}
-
-.grid-section #player-pic {
-    width: 208px;
-}
-
-.icon-one {
-    display: flex;
-}
-
-h6 {
-    font-size: 15px;
-    margin: 1px 1px;
-    margin-left: 10px;
-    padding: 2px;
-    display: flex;
-    width: 80px;
-    border: 1px solid black;
-    border-radius: 5px;
-    justify-content: center;
 }
 
 .grid-section p {
     margin: 1px 10px;
     font-size: 14px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-.icons {
+.flags {
     width: 60px;
+    margin: 20px 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-content: flex-end;
+    align-content: center;
+    align-items: center;
 }
 
-.icon-one {
-    display: flex;
+.flags img {
+    width: 70px;
+    height: 50px;
+}
+
+.details {
+
     height: 35%;
     margin-left: 6px;
 }
 
-.icon-one p {
-    margin-left: 6px;
-    margin-right: 30px;
-}
-
-
-.icon-two {
+h5 {
     display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 5px;
 }
+
 
 .grid-temp {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
-
-/* -----------------------------------
-    MAin ended 
-    --------------------------------------------------------*/
 
 footer {
     color: #f1e8e8;
@@ -220,7 +193,7 @@ footer h6 {
     font-weight: 100;
 }
 
-/* --------------------------For mobile view -----------------------*/
+/* For mobile view */
 @media only screen and (max-width:688px) {
     /* body {
         margin: 13px;
@@ -269,7 +242,7 @@ footer h6 {
 
     .grid-section {
         width: 100%;
-        height: 320px;
+        height: 250px;
         margin: 15px auto 1px;
     }
 
@@ -280,8 +253,22 @@ footer h6 {
 
     }
 
-    .grid-section #player-pic {
-        width: 100%;
+    .grid-section .flags {
+        width: 90%;
+    }
+
+    .flags img {
+        width: 130px;
+        height: 90px;
+    }
+
+    .details {
+        height: 50px;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        justify-content: center;
+        align-content: space-between;
     }
 
     footer {
@@ -300,7 +287,7 @@ footer h6 {
 
 
 
-/*----------------------------- For tab view--------------------------- */
+/* For tab */
 @media only screen and (min-width:689px) and (max-width:1023px) {
     .heading {
         width: 89%;
@@ -323,9 +310,6 @@ footer h6 {
         margin-right: 0;
     }
 
-    .grid-section #player-one {
-        width: 100%;
-    }
 
     .middle {
         width: 80%;
@@ -355,7 +339,8 @@ footer h6 {
 
     .grid-section {
         width: 100%;
-        height: 289px;
+        height: 250px;
+        margin: 15px auto 1px;
     }
 
     .grid-temp {
@@ -366,9 +351,24 @@ footer h6 {
         justify-items: center;
     }
 
+    .grid-section .flags {
+        width: 90%;
+    }
 
-    .grid-section #player-pic {
-        width: 100%;
+    .flags img {
+        width: 130px;
+        height: 90px;
+    }
+
+
+
+    .details {
+        height: 50px;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        justify-content: center;
+        align-content: space-between;
     }
 
     footer {
@@ -377,7 +377,6 @@ footer h6 {
 
 }
 
-/*-------------------------------------------------- For desktop view --------------------------------------------*/
 @media only screen and (max-width-1024px) {
     .headin-one {
         width: 100%;
